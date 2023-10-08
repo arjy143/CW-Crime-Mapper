@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Guide</title>
+<style>
+    img {
+        display: inline;
+        max-width:100%;
+        height:auto;
+    }
+</style>
+</head>
+<body>
+<main>
+    <h1>User Guide</h1>
+    <p>Welcome to the crime mapper tool! In this guide
+    I will be explaining the features of this app and how
+    to use it.
+    </p>
+    <h3><u>Start - MapsActivity</u></h3>
+    <p>Upon starting the app for the first time, you will be asked to give
+    location and notification permissions. Without these the app will not work.
+    After this, you will need to reload the app.</p>
+    <br>
+    <p>After the app has been set up for the first time, upon accessing the app
+    for the second time, map markers will now appear. The red marker indicates
+    the current user location or default location. The orange markers indicate
+    where a crime has happened.</p>
+    <div class = "img">
+    <img src="file:///android_asset/MapsActivity.png"/>
+    </div>
+    <br>
+    <p>If you tap a marker, an info window will appear, showing some basic
+    details about what happened there. If you hold down the marker, the
+    app will take you to the InfoActivity, where you can see more details
+    about that event.</p>
+    <div class = "img">
+    <img src="file:///android_asset/MapsActivityTap.png"/>
+    </div>
+    <br>
+    <p>There is a settings button on the top left corner of the app, which will
+    take you to the settings page.</p>
+    <br>
+    <h3><u>Info - InfoActivity</u></h3>
+    <p>The InfoActivity is where a user can see more details about the crime
+    that they have tapped on. You are able to see the type of crime, the
+        approximate location of the crime as well as the exact latitude
+    and longitude co-ordinates.</p>
+    <div class = "img">
+    <img src="file:///android_asset/InfoActivity.png"/>
+    </div>
+    <br>
+    <h3><u>Settings - SettingsActivity</u></h3>
+    <p>Tapping the settings button on the MapsActivity will take you to the
+    SettingsActivity. This is where a user can be taken to the user guide, the
+    data API or refresh the page.</p>
+    <div class = "img">
+    <img src="file:///android_asset/SettingsActivity.png"/>
+    </div>
+    <br>
+    <p>API button - This takes you to the UK police API, where you can see the
+    documentation for accessing the various data records stored there.</p>
+    <div class = "img">
+    <img src="file:///android_asset/APIButton.png"/>
+    </div>
+    <br>
+    <p>Refresh button - This activates an alarm which sends a broadcast, causing
+    the app to refresh.</p>
+    <div class = "img">
+    <img src="file:///android_asset/Refresh.png"/>
+    </div>
+    <br>
+    <h3><u>Notifications</u></h3>
+    <p>A notification will appear upon starting the app. This notification will
+    contain the current location of the user and the area that the crimes are being
+    shown in.</p>
+</main>
+</body>
+</html>
